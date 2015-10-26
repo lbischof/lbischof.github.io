@@ -9,8 +9,6 @@
 
 # Ignore the build directory
 /build
-
-# Ignore the vendor directory
 /vendor
 
 # Ignore cache

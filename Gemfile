@@ -1,11 +1,10 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
+# If you do not have OpenSSL installed, change
+# the following line to use 'http://'
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.4.0"
-
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
-
-# Deploy to git pages
-gem 'middleman-deploy', '~> 1.0'
+# Middleman Gems
+gem 'middleman-sprockets', '>= 4.0.0.rc.1'
+gem 'middleman-compass', '>= 4.0.0.rc.1'
+gem 'middleman-deploy', :git => 'https://github.com/middleman-contrib/middleman-deploy'
+gem 'middleman', '>= 4.0.0.rc.1'
+gem 'middleman-livereload'
