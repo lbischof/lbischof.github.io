@@ -1,13 +1,43 @@
 ---
-title: Welcome to Middleman
+title: Lorenz Bischof - Portfolio
 ---
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
-  </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<header>
+    <h1>Lorenz Bischof</h1>
+</header>
+<main>
+    <section>
+        <h1>About me</h1>
+        <p>
+        Portfolio under construction
+        </p>
+    </section>
+    <section>
+        <h1>Projects</h1>
+        <p>
+        Projects here
+        </p>
+    </section>
+    <section>
+        <h1>Blog</h1>
+    
+        <% blog.articles[0...5].each do |article| %>
+            <article>
+                <h1>
+                    <a href="<%= article.url %>"><%= article.title %></a>
+                    <time><%= article.date.strftime('%b %e %Y') %></time>
+                </h1>
+
+                <%= article.summary %>
+
+                <a href="<%= article.url %>">Read more</a>
+            </article>
+        <% end %>
+    </section>
+    <section>
+        <h1>Contact</h1>
+        <p>
+        Contact me
+        </p>
+    </section>
+</main>

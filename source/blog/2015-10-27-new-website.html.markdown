@@ -1,0 +1,4 @@
+---
+title: New Website
+---
+Last year in July I started my apprenticeship as a Linux System Administrator at Puzzle ITC. Working with Linux is a dream come true and I can't imagine life without automation or the command line. It seems like I started yesterday, even though I'll be done in a few months. I could tell you a lot more about how I work, but let's leave that for a future time. About two years ago I made a portfolio website for my apprenticeship application. After finding a position, my portfolio was neglected and became outdated. This new portfolio uses middleman, a static site generator and is hosted on Github. Furthermore living in Switzerland doesn't make practicing English any easier and that's why the new portfolio also includes a blog. If you have any questions or just want to chat don't hesitate to contact me. 
