@@ -21,7 +21,7 @@ activate :blog do |blog|
     blog.permalink = ":title"
     blog.sources   = "blog/:year-:month-:day-:title.html"
 end
-
+activate :directory_indexes
 ###
 # Helpers
 ###
