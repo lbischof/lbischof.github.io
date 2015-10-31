@@ -18,8 +18,8 @@ page '/*.txt', layout: false
 
 # Blog
 activate :blog do |blog|
-    blog.permalink = ":title"
-    blog.sources   = "blog/:year-:month-:day-:title.html"
+    blog.permalink = "blog/:title"
+    blog.sources   = "articles/:year-:month-:day-:title.html"
 end
 activate :directory_indexes
 ###
