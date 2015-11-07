@@ -18,6 +18,7 @@ page '/*.txt', layout: false
 
 # Blog
 activate :blog do |blog|
+    blog.layout    = "blog"
     blog.permalink = "blog/:title"
     blog.sources   = "articles/:year-:month-:day-:title.html"
 end

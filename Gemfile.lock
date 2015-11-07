@@ -30,7 +30,7 @@ GEM
     autoprefixer-rails (6.0.3)
       execjs
       json
-    backports (3.6.6)
+    backports (3.6.7)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -56,7 +56,7 @@ GEM
     i18n (0.7.0)
     json (1.8.3)
     kramdown (1.9.0)
-    listen (3.0.3)
+    listen (3.0.4)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     middleman (4.0.0.rc.1)
@@ -141,3 +141,6 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets (>= 4.0.0.rc.1)
   nokogiri
+
+BUNDLED WITH
+   1.10.6
