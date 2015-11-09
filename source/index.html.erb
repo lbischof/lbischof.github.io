@@ -6,35 +6,27 @@ title: Lorenz Bischof - Portfolio
     <h1>Lorenz Bischof</h1>
 </header>
 <main>
-    <section>
+    <section class="about">
         <h1 class="hidden">About me</h1>
         <p>
         Hi! I work as a Linux System Administrator at Puzzle ITC in Berne, Switzerland. I love everything Open Source, use Linux and prefer a mechanical keyboard with the adnw layout. This is a showcase of my work and what I pursue in my spare time.
         </p>
     </section>
-    <section>
-        <h1>Projects</h1>
-        <p>
-        No worries. I do have projects, they will probably appear here.
-        </p>
-    </section>
-    <section>
+    <section class="blog">
         <h1>Blog</h1>
     
         <% blog.articles[0...5].each do |article| %>
             <article>
                 <h1>
-                    <a href="<%= article.url %>"><%= article.title %></a>
-                    <time><%= article.date.strftime('%b %e %Y') %></time>
+                    <%= link_to article.title, article %>
+                    <time><%= article.date.strftime('%e %b') %></time>
                 </h1>
 
                 <%= article.summary %>
-
-                <a href="<%= article.url %>">Read more</a>
             </article>
         <% end %>
     </section>
-    <section>
+    <section class="contact">
         <h1>Contact</h1>
         <p>
         Shoot me an email at bischof@puzzle.ch

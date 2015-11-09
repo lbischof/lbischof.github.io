@@ -18,7 +18,7 @@ page '/*.txt', layout: false
 
 # Blog
 activate :blog do |blog|
-    blog.layout    = "blog"
+    blog.layout    = "article"
     blog.permalink = "blog/:title"
     blog.sources   = "articles/:year-:month-:day-:title.html"
 end
@@ -44,8 +44,8 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end

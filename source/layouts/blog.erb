@@ -1,8 +1,16 @@
 <% wrap_layout :layout do %>
-    <article>
-        <h1><%= current_page.data.title %></h1>
-        <%= yield %>
-    </article>
+    <% blog.articles.each do |article| %>
+        <article>
+            <h1>
+                <a href="<%= article.url %>"><%= article.title %></a>
+                <time><%= article.date.strftime('%b %e %Y') %></time>
+            </h1>
+
+            <%= article.summary %>
+
+            <a href="<%= article.url %>">Read more</a>
+        </article>
+    <% end %>
 <% end %>
 
 
