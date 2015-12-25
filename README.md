@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/lbischof/lbischof.github.io.svg?branch=source)](https://travis-ci.org/lbischof/lbischof.github.io)
+
+This is my personal website.
+
 # Docker
 
 ## Build
