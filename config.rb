@@ -27,7 +27,7 @@ activate :directory_indexes
 # Helpers
 ###
 
-activate :autoprefixer 
+activate :autoprefixer
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -48,4 +48,18 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+
+  committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
+  commit_message = "Deployed using #{committer_app}"
+
+  if ENV["TRAVIS_BUILD_NUMBER"] then
+    commit_message += " (Travis Build \##{ENV["TRAVIS_BUILD_NUMBER"]})"
+  end
+
+  deploy.commit_message = commit_message
 end
