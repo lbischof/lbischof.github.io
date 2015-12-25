@@ -3,11 +3,11 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman-sprockets', '>= 4.0.0.rc.1'
+gem 'middleman-sprockets'
 gem 'middleman-autoprefixer'
-gem 'middleman-blog', :git => 'https://github.com/middleman/middleman-blog'
+gem 'middleman-blog'
 gem 'nokogiri'
-gem 'middleman', '>= 4.0.0.rc.1'
+gem 'middleman'
 gem 'middleman-livereload'
 gem 'execjs'
 gem 'therubyracer'
