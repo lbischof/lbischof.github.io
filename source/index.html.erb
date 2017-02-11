@@ -9,25 +9,10 @@ title: Lorenz Bischof - Portfolio
     <section class="about">
         <h1 class="hidden">About me</h1>
         <p>
-        Hi! I work as a Linux System Administrator at Puzzle ITC in Berne, Switzerland. I love everything Open Source, use Linux and prefer a mechanical keyboard with the adnw layout. This is a showcase of my work and what I pursue in my spare time.
+        Hi! I work as a Linux System Administrator at Puzzle ITC in Berne, Switzerland. I love everything Open Source, use Linux and prefer a mechanical keyboard with the adnw layout.
         </p>
     </section>
-    <section class="blog">
-        <h1>Blog</h1>
-    
-        <% blog.articles[0...5].each do |article| %>
-            <article>
-                <h1>
-                    <%= link_to article.title, article %>
-                    <time><%= article.date.strftime('%e %b') %></time>
-                </h1>
-
-                <%= article.summary %>
-            </article>
-        <% end %>
-    </section>
     <section class="contact">
-        <h1>Contact</h1>
         <p>
         Shoot me an email at bischof@puzzle.ch
         <span id="gpg">GPG: 34C7 D8DE F3CA 1548 652B  393F 2285 067D AFBA 32A6</p>
