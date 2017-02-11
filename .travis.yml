@@ -1,7 +1,9 @@
+dist: trusty
+sudo: false
 language: ruby
 cache: bundler
 rvm:
-    - 2.2.1
+    - 2.4.0
 branches:
   only:
   - source # branch to build
