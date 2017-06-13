@@ -17,11 +17,11 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # Blog
-activate :blog do |blog|
-    blog.layout    = "article"
-    blog.permalink = "blog/:title"
-    blog.sources   = "articles/:year-:month-:day-:title.html"
-end
+#activate :blog do |blog|
+#    blog.layout    = "article"
+#    blog.permalink = "blog/:title"
+#    blog.sources   = "articles/:year-:month-:day-:title.html"
+#end
 activate :directory_indexes
 ###
 # Helpers

@@ -16,7 +16,5 @@ docker run --rm -it -v "$PWD":/usr/src/app -p 4567:4567 lbischof/middleman
 
 ## Update
 ```sh
-docker run --rm -it -v "$PWD":/usr/src/app --entrypoint /bin/bash -u root lbischof/middleman
-bundle update
+docker run --rm -it -v "$PWD":/usr/src/app --entrypoint bundle lbischof/middleman update
 ```
-Then rebuild the docker image.
